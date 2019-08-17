@@ -187,4 +187,6 @@ LOCAL_SRC_FILES := ./config.c \
   $(MY_PYTHON_SRC_ROOT)/Modules/_io/fileio.c
   
 
-include $(BUILD_SHARED_LIBRARY)
+LOCAL_STATIC_LIBRARIES += $(NDK-ROOT)/source/crystax/libs/$(APP_ABI)/libcrystax.a
+
+include $(BUILD_STATIC_LIBRARY)
